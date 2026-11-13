@@ -455,13 +455,13 @@
       currentClockStyle = "pure-black";
     }
 
-    // Default migration: Pure Black for OLED Infinite Contrast
-    if (!localStorage.getItem('orlando-pure-black-default-v1')) {
+    // Default migration: Pure Black for OLED Infinite Contrast (Zero Blur, True Black)
+    if (!localStorage.getItem('orlando-pure-black-default-v2')) {
       currentAppTheme = "pure-black";
       currentClockStyle = "pure-black";
       localStorage.setItem('orlando-app-theme', 'pure-black');
       localStorage.setItem('orlando-clock-style', 'pure-black');
-      localStorage.setItem('orlando-pure-black-default-v1', 'true');
+      localStorage.setItem('orlando-pure-black-default-v2', 'true');
     }
   } catch(e) {}
 
